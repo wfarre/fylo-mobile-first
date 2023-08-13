@@ -1,6 +1,6 @@
 :root {
     --lr-margin: 24px;
-    --bg-main: hsl(218, 28%, 13%);
+    --bg-main: #1B2330;
     --cta-bg: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
     --testimonials-bg-color: hsl(219, 30%, 18%);
     --footer-bg: hsl(216, 53%, 9%);
@@ -101,6 +101,8 @@ h3 {
 
     .navbar {
         gap: calc((57/ 1440) * 100vw);
+        padding-top: 73px;
+        padding-bottom: 75px;
     }
 
     .navbar-logo {
@@ -118,7 +120,7 @@ h3 {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        font-weight: 16px;
+        font-size: 16px;
         transition: font-weight 200ms;
     }
 
@@ -227,6 +229,12 @@ transform: scaleX(1);
     .header {
         background-image: url("./images/bg-curvy-desktop.svg");
         /* padding-bottom: 158px; */
+    }
+
+    .btn{
+        height: 56px;
+        width: 280px;
+        font-size: 16px;
     }
 }
 
@@ -616,6 +624,8 @@ transform: scaleX(1);
 
     .btn.btn-submit {
         width: 200px;
+        height: 48px;
+        font-size: 1rem;
     }
 }
 

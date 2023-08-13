@@ -157,7 +157,31 @@
                         covered for all of your file storage needs.</p>
                     <p class="description">Securely share files and folders with friends, family and colleagues for live
                         collaboration. No email attachments required.</p>
-                    <a href="#" class="link">See how Fylo works <img src="./images/icon-arrow.svg" alt=""></a>
+                    <a href="#" class="link">See how Fylo works 
+                        <!-- <div class="arrow"></div> -->
+                        <svg class="arrow" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group 10">
+                            <g id="Oval" filter="url(#filter0_d_0_339)">
+                            <circle cx="8" cy="8" r="6" fill="current"/>
+                            </g>
+                            <g id="arrow-forward">
+                            <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M8.58235 6L8.21939 6.35L9.67124 7.75H5.33333V8.25H9.67124L8.21939 9.65L8.58235 10L10.6564 8L8.58235 6Z" fill="#1B2330"/>
+                            </g>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_0_339" x="0" y="0" width="16" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset/>
+                            <feGaussianBlur stdDeviation="1"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.384314 0 0 0 0 0.878431 0 0 0 0 0.85098 0 0 0 0.811141 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_339"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_339" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>
+                            
+                    </a>
                 </div><!-- .section-main -->
 
                 <footer class="section-footer"></footer>
@@ -247,9 +271,10 @@
                 </div><!-- .section-main -->
 
                 <footer class="section-footer">
-                    <form action="/" class="form">
+                    <form action="/" class="form" id="contact-form">
                         <input type="text" class="email-input" placeholder="email@example.com">
                         <button class="btn btn-submit">Get Started For Free</button>
+                        <span class="error-msg" id="email-error">Error, please check your email</span>
                     </form>
                 </footer><!-- .section-footer -->
 
@@ -270,7 +295,7 @@
 
             <div class="footer-header">
 
-                <div class="info">
+                <div class="info address">
                     <img src="./images/icon-location.svg" alt="">
                     <p class="info-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua</p>
@@ -298,22 +323,22 @@
 
                     <ul class="navigation">
                         <li class="navigation-item">
-                            <a href="#" class="link">
+                            <a data-text="About Us" href="#" class="link">
                                 About Us
                             </a>
                         </li><!-- .navigation-item -->
                         <li class="navigation-item">
-                            <a href="#" class="link">
+                            <a data-text="Jobs" href="#" class="link">
                                 Jobs
                             </a>
                         </li><!-- .navigation-item -->
                         <li class="navigation-item">
-                            <a href="#" class="link">
+                            <a data-text="Press" href="#" class="link">
                                 Press
                             </a>
                         </li><!-- .navigation-item -->
                         <li class="navigation-item">
-                            <a href="#" class="link">
+                            <a data-text="Blog" href="#" class="link">
                                 Blog
                             </a>
                         </li><!-- .navigation-item -->
@@ -321,17 +346,17 @@
 
                     <ul class="navigation">
                         <li class="navigation-item">
-                            <a href="#" class="link">
+                            <a data-text="Contact Us" href="#" class="link">
                                 Contact Us
                             </a>
                         </li><!-- .navigation-item -->
                         <li class="navigation-item">
-                            <a href="#" class="link">
+                            <a data-text="Terms" href="#" class="link">
                                 Terms
                             </a>
                         </li><!-- .navigation-item -->
                         <li class="navigation-item">
-                            <a href="#" class="link">
+                            <a data-text="Privacy" href="#" class="link">
                                 Privacy
                             </a>
                         </li><!-- .navigation-item -->
@@ -363,10 +388,13 @@
             </div><!-- .footer-footer -->
         </div><!-- .container -->
 
+
+        <div class="attribution">blabla</div>
+
     </footer><!-- .footer -->
 
 
-    <script src="" async defer></script>
+    <script src="./index.js" async defer></script>
 </body>
 
 </html>

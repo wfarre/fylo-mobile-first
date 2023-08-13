@@ -769,10 +769,7 @@ transform: scaleX(1);
     background-color: #8ADAE3;
 }
 
-.sns-txt{
-    position: absolute;
-    visibility: hidden;
-}
+
 
 
 @media all and (min-width: 677px) {
